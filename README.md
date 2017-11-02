@@ -13,7 +13,7 @@ topics in these fields.
 
 This project was a part of the second quarter of my data science certificate program. It simulates the famous "Monty Hall" problem, originally featured on the television game show program "Let's Make a Deal". In the game, a contestant is told that a prize exists behind one of three doors, and behind the other two doors are goats. The contestant picks a door, and one of the other two doors is then opened by the host revealing one of the goats. At this point, the contestant is allowed to switch their choice to the remaining door, or stick with their original choice. The optimal strategy is somewhat counterintuitive without evidence, so the writeup performs a simulation to determine the probability of winning the prize for each strategy (switching vs. staying) and summarizes the results.
 
-**MovieSentimentNaiveBayes.html**
+**MovieSentimentNaiveBayes.ipynb**
 
 This was the first machine learning project I completed using Python. I have used Python for over 7 years in my career at Boeing, but never before for this type of task. I wanted to created something from scratch, and Naive Bayes classifiers seemed like a great place to start because they are relatively easy to construct and train. This project uses sentiment analysis to attempt to classify movie reviews as being either positive or negative. Both multinomial and Bernoulli likelihood models were used. Confusion matrices, accuracy, sensitivity and specificity are used to evaluate the models, along with the overall runtime.
 
