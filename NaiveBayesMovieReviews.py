@@ -5,6 +5,7 @@ import numpy
 import time
 
 
+# Decorator for timing function calls
 def timeit(method):
     def timed(*args, **kw):
         ts = time.time()
@@ -140,16 +141,17 @@ def computerPosteriorBernoulli(directory, files, priorPos, priorNeg, pos_binary_
 
 pos_train_directory = '/Users/gdevore21/Documents/Projects/Independent/Movie Reviews/train/pos'
 pos_files_train = os.listdir(pos_train_directory)
-print('%i positive training reviews' % len(pos_files_train))
+print('Using %i positive training reviews' % len(pos_files_train))
 
 neg_train_directory = '/Users/gdevore21/Documents/Projects/Independent/Movie Reviews/train/neg'
 neg_files_train = os.listdir(neg_train_directory)
-print('%i negative training reviews' % len(neg_files_train))
+print('Using %i negative training reviews' % len(neg_files_train))
 
 # Calculate prior probabilities (percentage of pos/neg reviews)
 priorPos = float(len(pos_files_train))/(len(pos_files_train) + len(neg_files_train))
 priorNeg = float(len(neg_files_train))/(len(pos_files_train) + len(neg_files_train))
 
+print
 print('Prior probability for positive reviews = %f' % priorPos)
 print('Prior probability for negative reviews = %f' % priorNeg)
 
@@ -162,6 +164,7 @@ print('Reading negative reviews...')
 print('Done, %i unique words logged, %i words total' % (len(neg_word_dict.keys()), neg_word_count))
 
 # Create V, unique list of all words in all reviews
+print('Creating vocabulary vector V...')
 combined_words = pos_word_dict.copy()
 combined_words.update(neg_word_dict)
 V = combined_words.keys()
@@ -185,52 +188,49 @@ neg_binary_sum = (numpy.sum(neg_binary, axis=0) + 1) / (len(neg_files_train) + 2
 # Test on new reviews
 pos_test_directory = '/Users/gdevore21/Documents/Projects/Independent/Movie Reviews/test/pos'
 pos_files_test = os.listdir(pos_test_directory)
+print('Using %i positive testing reviews' % len(pos_files_test))
+
 neg_test_directory = '/Users/gdevore21/Documents/Projects/Independent/Movie Reviews/test/neg'
 neg_files_test = os.listdir(neg_test_directory)
+print('Using %i negative testing reviews' % len(neg_files_test))
 
 print('Testing reviews using multinomial model...')
+# Positive reviews
 (percentPos, percentNeg) = computePosteriorMultinomial(pos_test_directory, pos_files_test, priorPos, priorNeg,
                                         pos_word_dict, pos_word_count, neg_word_dict, neg_word_count, len(V))
-multTP = percentPos  # True positive rate
-multFN = percentNeg  # False negative rate
+multTP = percentPos  # Percent positive reviews
+multFN = percentNeg  # Percent negative reviews
+# Negative reviews
 (percentPos, percentNeg) = computePosteriorMultinomial(neg_test_directory, neg_files_test, priorPos, priorNeg,
                                         pos_word_dict, pos_word_count, neg_word_dict, neg_word_count, len(V))
-multTN = percentNeg  # True negative rate
-multFP = percentPos  # False positive rate
+multTN = percentNeg  # Percent negative reviews
+multFP = percentPos  # Percent positive reviews
 
-print('Multinomial True Positive: %f' % multTP)
-print('Multinomial True Negative: %f' % multTN)
-print('Multinomial False Positive: %f' % multFP)
-print('Multinomial False Negative: %f' % multFN)
-
-# Calculate accuracy, PPV, and NPV
+# Calculate accuracy, sensitivity and specificity
 multAcc = (multTP*len(pos_files_test) + multTN*len(neg_files_test))/(len(pos_files_test) + len(neg_files_test))
-multPPV = (multTP*len(pos_files_test))/(multTP*len(pos_files_test) + multFP*len(neg_files_test))
-multNPV = (multTN*len(neg_files_test))/(multTN*len(neg_files_test) + multFN*len(pos_files_test))
+multSen = (multTP*len(pos_files_test))/(multTP*len(pos_files_test) + multFN*len(pos_files_test))
+multSpc = (multTN*len(neg_files_test))/(multTN*len(neg_files_test) + multFP*len(neg_files_test))
 print('Multinomial Accuracy: %f' % multAcc)
-print('Multinomial PPV: %f' % multPPV)
-print('Multinomial NPV: %f' % multNPV)
+print('Multinomial Sensitivity: %f' % multSen)
+print('Multinomial Specificity: %f' % multSpc)
 
 
 print('Testing reviews using Bernoulli model...')
+# Positive reviews
 (percentPos, percentNeg) = computerPosteriorBernoulli(pos_test_directory, pos_files_test, priorPos, priorNeg,
                                         pos_binary_sum, neg_binary_sum, Vdict)
-bernTP = percentPos  # True positive rate
-bernFN = percentNeg  # False negative rate
+bernTP = percentPos  # Percent positive reviews
+bernFN = percentNeg  # Percent negative reviews
+# Negative reviews
 (percentPos, percentNeg) = computerPosteriorBernoulli(neg_test_directory, neg_files_test, priorPos, priorNeg,
                                         pos_binary_sum, neg_binary_sum, Vdict)
-bernTN = percentNeg  # True negative rate
-bernFP = percentPos  # False positive rate
+bernTN = percentNeg  # Percent negative reviews
+bernFP = percentPos  # Percent positive reviews
 
-print('Bernoulli True Positive: %f' % bernTP)
-print('Bernoulli True Negative: %f' % bernTN)
-print('Bernoulli False Positive: %f' % bernFP)
-print('Bernoulli False Negative: %f' % bernFN)
-
-# Calculate accuracy, PPV, and NPV
+# Calculate accuracy, sensitivity and specificity
 bernAcc = (bernTP*len(pos_files_test) + bernTN*len(neg_files_test))/(len(pos_files_test) + len(neg_files_test))
-bernPPV = (bernTP*len(pos_files_test))/(bernTP*len(pos_files_test) + bernFP*len(neg_files_test))
-bernNPV = (bernTN*len(neg_files_test))/(bernTN*len(neg_files_test) + bernFN*len(pos_files_test))
-print('Bernoulli Accuracy: %f' % multAcc)
-print('Bernoulli PPV: %f' % multPPV)
-print('Bernoulli NPV: %f' % multNPV)
+bernSen = (bernTP*len(pos_files_test))/(bernTP*len(pos_files_test) + bernFN*len(pos_files_test))
+bernSpc = (bernTN*len(neg_files_test))/(bernTN*len(neg_files_test) + bernFP*len(neg_files_test))
+print('Bernoulli Accuracy: %f' % bernAcc)
+print('Bernoulli Sensitivity: %f' % bernSen)
+print('Bernoulli Specificity: %f' % bernSpc)
