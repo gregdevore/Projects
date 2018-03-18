@@ -3,9 +3,7 @@ A collection of personal data visualization, data science, and machine learning 
 
 ## About Me
 
-I'm an engineer with a master's degree in applied mathematics and am currently pursuing certificates in data science 
-and machine learning. I wanted to have a place to share some of the projects I've created while learning and exploring
-topics in these fields.
+I'm an engineer with a master's degree in applied mathematics and certificates in data science and machine learning (this one's still in progress). I wanted to have a place to share some of the projects I've created while learning and exploring topics in these fields.
 
 ## Documents in this Repository
 
@@ -15,7 +13,7 @@ This project was a part of the second quarter of my data science certificate pro
 
 **MovieSentimentNaiveBayes.ipynb**
 
-This was the first machine learning project I completed using Python. I have used Python for over 7 years in my career at Boeing, but never before for this type of task. I wanted to created something from scratch, and Naive Bayes classifiers seemed like a great place to start because they are relatively easy to construct and train. This project uses sentiment analysis to attempt to classify movie reviews as being either positive or negative. Both multinomial and Bernoulli likelihood models were used. Confusion matrices, accuracy, sensitivity and specificity are used to evaluate the models, along with the overall runtime.
+This was the first machine learning project I completed using Python. I have used Python for over 7 years in my career at Boeing, but never before for this type of task. I wanted to created something from scratch, and Naive Bayes classifiers seemed like a great place to start because they are relatively easy to construct and train. This project uses sentiment analysis to attempt to classify 12,000 movie reviews as being either positive or negative. Both multinomial and Bernoulli likelihood models were used. Confusion matrices, accuracy, sensitivity and specificity are used to evaluate the models, along with the overall runtime. Both models achieved an accuracy of over 80%. Typically, it is thought that humans can only agree on the sentiment of a review about 80% of the time.
 
 **Wine_Exploration.pdf**
 
@@ -24,3 +22,7 @@ This was my final project for the second quarter of my data science certificate 
 **NYC_Taxi_Capstone_Project.pdf**
 
 This was the capstone project for my data science certificate program, which I worked on with one other student. We looked at trip and fare data for ~1.7 million taxi rides in the greater New York City area, and were tasked with proposing a business question that could be answered using the data set. We wanted to focus on something that would bring value to a business, and set about trying to predict the length of a ride (in seconds) given only information that would be known to the driver at the start of a trip. Project highlights include: Using k-means clustering to group rides by pickup location in order to model traffic, pulling in weather data from NOAA to add the effects of rain/snow on the length of a ride, and using hyperparameter tuning via 10-fold cross validation to select an appropriate machine learning model. Ultimately, a random forest regression model is able to predict the length of a ride with a validation RMSE of 4 minutes (the median trip length is 10 minutes), and a random forest classification model is able to classify trips as short, medium, or long with nearly 80% validation accuracy.
+
+**MarathonScraping.pdf**
+
+This was my first serious attempt at web scraping, a topic that I'd known about for a while, but was honestly intimidated by. I finally decided to take the plunge, and use web scraping to look at the top 100 finishers in the NYC marathon since the year 2000 using R. I used both the *rvest* and *RSelenium* packages, which made what could have been a very frustrating experience relatively painless. Overall, I found that the top finishing times haven't improved much in the last 17 years, and that the men's times have a smaller standard deviation relative to the mean compared to the women's. Also, the distribution of finishing times is always left skewed, with the trend only getting more pronounced over time. In other words, although the winning times aren't improving, the bulk of the top 100 are consistently finishing in a tighter pack. This trend is especially prevalent in the women's results.
