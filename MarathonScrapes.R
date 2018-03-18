@@ -6,18 +6,18 @@ library(XML)
 library(dplyr)
 library(tidyr)
 library(ggplot2)
-
 # Start selenium server and browser
 rsDriver()
 remDr <- remoteDriver(remoteServerAddr = "localhost", port = 4445L, browserName = "chrome")
 remDr$open()
+
 # Start at base URL
 url <- 'http://www.marathonguide.com/results/browse.cfm?MIDD=472171105'
 p <- html_session(url)
 # Store yearly results in list (may have different number of columns depending on the year)
 overall_results <- list()
 i <- 1
-gender <- 'Men'
+gender <- 'Women'
 years <- c(seq(2000,2011),seq(2013,2017))
 for (year in years) {
     cat('Scraping year ',year,' for ',gender,'\'s results\n', sep = '')
@@ -40,11 +40,13 @@ for (year in years) {
     }
     raceRangeValue <- remDr$findElement(using = 'xpath', xpath)
     raceRangeValue$clickElement()
+    
     # Click 'View' to see race results
     viewButton <- remDr$findElement(using = 'xpath', '/html/body/table[2]/tbody/tr[1]/td[2]/table[3]/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/table[2]/tbody/tr/td[1]/form/p[3]/input[3]')
     viewButton$clickElement()
     # Give page time to load
     Sys.sleep(2)
+    
     # Grab HTML table and parse into data frame
     table <- remDr$findElement(using = 'xpath','/html/body/table[2]/tbody/tr[1]/td[2]/table[3]/tbody/tr[2]/td/table')
     elemtxt <- table$getElementAttribute('outerHTML')
@@ -78,10 +80,11 @@ results.df <- results.df %>% separate(Time, c('Hour','Minute','Second'),':')
 results.df[, c('Hour','Minute','Second')] <- lapply(results.df[, c('Hour','Minute','Second')],as.numeric)
 results.df <- results.df %>% mutate(TotalTime = Hour + Minute/60 + Second/3600)
 
-# Look at best times for each year
+# Compute time stats for each year
 results.timeSummary <- results.df %>% group_by(Year) %>% 
   summarize(bestTime = min(TotalTime), worstTime = max(TotalTime), meanTime = mean(TotalTime),
             sd = sd(TotalTime))
+
 # Plot best times
 ggplot(results.timeSummary, aes(x = Year, y = bestTime)) + geom_line() + 
   ylim(2.0,2.5) + ylab('Time (Hours)') + xlab('Year') + ggtitle(sprintf('%s\'s Best Finishing Time',gender))
@@ -91,6 +94,7 @@ ggplot(results.timeSummary, aes(x = Year, y = meanTime)) +
   geom_line() + ylab('Time (Hours)') + xlab('Year') + 
   ggtitle(sprintf('%s\'s Mean Finishing Time With SD Bars',gender)) +
   ylim(2,3.5)
+
 # Plot distribution of finishing times for each year
 minT <- min(results.df$TotalTime)
 maxT <- max(results.df$TotalTime)
