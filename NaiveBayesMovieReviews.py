@@ -51,8 +51,8 @@ def buildLikelihoodDict(directory, files):
 def buildBinaryTermArray(directory, files, V):
     # Initialize binary term array
     btarray = numpy.zeros(shape=(len(files), len(V)))
-    for i in range(len(files)):
-        words = returnWordsFromFile(os.path.join(directory, files[i]))
+    for i, file in enumerate(files):
+        words = returnWordsFromFile(os.path.join(directory, file))
         # Populate binary term array with 1's where specific words occur
         for w in words:
             j = V[w]  # Grab column associated with current word
