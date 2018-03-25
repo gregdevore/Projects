@@ -31,4 +31,4 @@ This was my first serious attempt at web scraping, a topic that I'd known about 
 
 **AutoPrices_DeVore.pdf**
 
-This assignment explores some of the basic concepts associated with hypothesis testing.  In particular, several significance tests are applied to the price of an automobile when stratified by binary and multivariate categories such as fuel type, or style.
+This assignment explores some of the basic concepts associated with hypothesis testing using an autombile data set. Tests of normality are applied to the data of interest (price), and significance tests are conducted on the price when stratified by binary and multivariate categories such as fuel type, aspiration type, or style.
