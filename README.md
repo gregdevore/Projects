@@ -26,3 +26,9 @@ This was the capstone project for my data science certificate program, which I w
 **MarathonScraping.pdf**
 
 This was my first serious attempt at web scraping, a topic that I'd known about for a while, but was honestly intimidated by. I finally decided to take the plunge, and use web scraping to look at the top 100 finishers in the NYC marathon since the year 2000 using R. I used both the *rvest* and *RSelenium* packages, which made what could have been a very frustrating experience relatively painless. Overall, I found that the top finishing times haven't improved much in the last 17 years, and that the men's times have a smaller standard deviation relative to the mean compared to the women's. Also, the distribution of finishing times is always left skewed, with the trend only getting more pronounced over time. In other words, although the winning times aren't improving, the bulk of the top 100 are consistently finishing in a tighter pack. This trend is especially prevalent in the women's results.
+
+### Selected Assignments From Data Science Certificate
+
+**AutoPrices_DeVore.pdf**
+
+This assignment explores some of the basic concepts associated with hypothesis testing.  In particular, several significance tests are applied to the price of an automobile when stratified by binary and multivariate categories such as fuel type, or style.
