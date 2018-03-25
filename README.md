@@ -36,3 +36,7 @@ This assignment explores some of the basic concepts associated with hypothesis t
 **Bayesian_Auto_DeVore.pdf**
 
 This assignment continues the with the automobile price data set, this time using Bayesian analysis to perform hypothesis testing. Starting with a prior distribution of automobile price, likelihood functions are computed as Gaussian distributions with mean and standard deviation from price when stratified by binary or multivariate categories. Once posterior distributions are computed, they are compared using 0.95 credible intervals to determine if a significant relationship exists on the price when stratified by a particular category.
+
+**Time_Series_DeVore.pdf**
+
+This assignment explores the topic of time series analysis, specifically to forecast ice cream sales over a year given 18 years of historical data. Topics include stationary time series, auto correlation and partial auto correlation, STL decomposition, and ARIMA forecasting.
