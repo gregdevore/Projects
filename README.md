@@ -40,3 +40,9 @@ This assignment continues the with the automobile price data set, this time usin
 **Time_Series_DeVore.pdf**
 
 This assignment explores the topic of time series analysis, specifically to forecast ice cream sales over a year given 18 years of historical data. Topics include stationary time series, auto correlation and partial auto correlation, STL decomposition, and ARIMA forecasting.
+
+### Selected Assignments From Machine Learning Certificate Program
+
+**GregDeVore-L05-Wages.ipynb**
+
+This assignment looks at City of Seattle employee wage data. The goal was to build a model to predict hourly wage based on department, gender, and job title.  Gender was not included in the data set, so the 'gender' package in R was used to predict the most likely gender based on the employee's name.  One-hot encoding was used to transform the department feature, and Dracula counts were created to assign a probability to the job title based on its frequency within the data set.  Also, because there were a high number of features, a recursive feature elimination algorithm was run to find an optimal subset (based on the root mean squared error of a test data set).
