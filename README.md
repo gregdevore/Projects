@@ -54,3 +54,7 @@ This assignment explored the popular housing price data set from Kaggle.  Highli
 * Resolving heteroscedasticity in the residual versus fitted values plot from the linear regression model by taking the log of the response variable.
 * Using LASSO regularization as a means of feature selection and commenting its choice of the 'most important' features.
 * Create linear models using various forms of regularization (LASSO, Ridge, Elastic Net) and comparing the validation set mean squared error of each.
+
+**GregDeVore-L08-WageAdmit.ipynb**
+
+This assignment extends the standard linear regression model by investigating the use of polynomial fits, splines, and generalized additive models (using basis and smoothing splines).
