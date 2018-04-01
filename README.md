@@ -45,4 +45,12 @@ This assignment explores the topic of time series analysis, specifically to fore
 
 **GregDeVore-L05-Wages.ipynb**
 
-This assignment looks at City of Seattle employee wage data. The goal was to build a model to predict hourly wage based on department, gender, and job title.  Gender was not included in the data set, so the 'gender' package in R was used to predict the most likely gender based on the employee's name.  One-hot encoding was used to transform the department feature, and Dracula counts were created to assign a probability to the job title based on its frequency within the data set.  Also, because there were a high number of features, a recursive feature elimination algorithm was run to find an optimal subset (based on the root mean squared error of a test data set).
+This assignment looks at City of Seattle employee wage data.  The goal was to build a model to predict hourly wage based on department, gender, and job title.  Gender was not included in the data set, so the 'gender' package in R was used to predict the most likely gender based on the employee's name.  One-hot encoding was used to transform the department feature, and Dracula counts were created to assign a probability to the job title based on its frequency within the data set.  Also, because there were a high number of features, a recursive feature elimination algorithm was run to find an optimal subset (based on the root mean squared error of a test data set).
+
+**GregDeVore-L07-HomePrice.ipynb**
+
+This assignment explored the popular housing price data set from Kaggle.  Highlights include
+* Imputing missing values using simple techniques along with the 'MICE' package from R.
+* Resolving heteroscedasticity in the residual versus fitted values plot from the linear regression model by taking the log of the response variable.
+* Using LASSO regularization as a means of feature selection and commenting its choice of the 'most important' features.
+* Create linear models using various forms of regularization (LASSO, Ridge, Elastic Net) and comparing the validation set mean squared error of each.
