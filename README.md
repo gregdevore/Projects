@@ -62,3 +62,7 @@ This assignment extends the standard linear regression model by investigating th
 **GregDeVore-L09-Bayes.ipynb**
 
 This assignment explores a few topics in Bayesian analysis, including creating a simple Naive Bayes classifier and a Bayesian network using the 'bnlearn' package in R.  It also features a simple web scraping example using the 'rvest' package in R.
+
+**GregDeVore-L10-PCA.ipynb**
+
+This assignment using principal component analysis to explore the wine quality data set from Kaggle. In addition, principal components regression is compared to linear regression as a means of predicting wine quality.
