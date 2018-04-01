@@ -58,3 +58,7 @@ This assignment explored the popular housing price data set from Kaggle.  Highli
 **GregDeVore-L08-WageAdmit.ipynb**
 
 This assignment extends the standard linear regression model by investigating the use of polynomial fits, splines, and generalized additive models (using basis and smoothing splines).
+
+**GregDeVore-L09-Bayes.ipynb**
+
+This assignment explores a few topics in Bayesian analysis, including creating a simple Naive Bayes classifier and a Bayesian network using the 'bnlearn' package in R.  It also features a simple web scraping example using the 'rvest' package in R.
