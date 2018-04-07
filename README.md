@@ -49,11 +49,7 @@ This assignment looks at City of Seattle employee wage data.  The goal was to bu
 
 **GregDeVore-L07-HomePrice.ipynb**
 
-This assignment explored the popular housing price data set from Kaggle.  Highlights include
-* Imputing missing values using simple techniques along with the 'MICE' package from R.
-* Resolving heteroscedasticity in the residual versus fitted values plot from the linear regression model by taking the log of the response variable.
-* Using LASSO regularization as a means of feature selection and commenting its choice of the 'most important' features.
-* Create linear models using various forms of regularization (LASSO, Ridge, Elastic Net) and comparing the validation set mean squared error of each.
+This assignment explored the idea of regularization using the popular housing price data set from Kaggle.  The first step was to impute missing values using both simple techniques and the 'MICE' package from R.  Also, heteroscedasticity in the residual versus fitted values plot from the linear regression model was resolved by taking the log of the response variable.  In addition, LASSO regularization was used as a means of feature selection, and its choice of the 'most important' features was investigated.  Finally, linear models were created using various forms of regularization (LASSO, Ridge, Elastic Net) and the validation set mean squared error of each was compared.
 
 **GregDeVore-L08-WageAdmit.ipynb**
 
