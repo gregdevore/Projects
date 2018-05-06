@@ -74,3 +74,7 @@ This assignment explores the concept of Maximal Margin Classifiers through a sim
 **Lesson3_Decision_trees_Ensemble_methods_DeVore.ipynb**
 
 This assignment explores the algorithm used to fit a regression tree. In addition, a random forest classifier is built from scratch using a series of single decision trees built on small random samples of the data set.
+
+**Lesson4_Ensembles_Imputation_DeVore.ipynb**
+
+This assignment explores imputing missing data in Python. Specifically, the precision and recall of a binary classifier is plotted as a function of the amount of missing data from a single feature. In addition, a custom imputation function is written to convert data types using regular expressions.
