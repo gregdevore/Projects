@@ -62,3 +62,7 @@ This assignment explores a few topics in Bayesian analysis, including creating a
 **GregDeVore-L10-PCA.ipynb**
 
 This assignment using principal component analysis to explore the wine quality data set from Kaggle. In addition, principal components regression is compared to linear regression as a means of predicting wine quality.
+
+**Lesson1_Input_and_Outputs_DeVore.ipynb**
+
+This assignment introduces Python for machine learning, specifically exploratory data analysis and the standardization of features. It also includes building a classification tree from scratch using entropy and information gain to establish a set of rules. This tree is trained on a subset of the data and evaluated on the remaining observations.
