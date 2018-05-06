@@ -70,3 +70,7 @@ This assignment introduces Python for machine learning, specifically exploratory
 **Lesson2_SVM_ANN_DeVore.ipynb**
 
 This assignment explores the concept of Maximal Margin Classifiers through a simple handworked example. It also features a comparison between a linear support vector machine and multilayer perceptron for use in classifying the MNIST handwritten digits data set. Both models are tuned using a randomly sampled subset of the data, and confusion matrices are used to evaluate their accuracy.
+
+**Lesson3_Decision_trees_Ensemble_methods_DeVore.ipynb**
+
+This assignment explores the algorithm used to fit a regression tree. In addition, a random forest classifier is built from scratch using a series of single decision trees built on small random samples of the data set.
