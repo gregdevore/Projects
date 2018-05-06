@@ -66,3 +66,7 @@ This assignment using principal component analysis to explore the wine quality d
 **Lesson1_Input_and_Outputs_DeVore.ipynb**
 
 This assignment introduces Python for machine learning, specifically exploratory data analysis and the standardization of features. It also includes building a classification tree from scratch using entropy and information gain to establish a set of rules. This tree is trained on a subset of the data and evaluated on the remaining observations.
+
+**Lesson2_SVM_ANN_DeVore.ipynb**
+
+This assignment explores the concept of Maximal Margin Classifiers through a simple handworked example. It also features a comparison between a linear support vector machine and multilayer perceptron for use in classifying the MNIST handwritten digits data set. Both models are tuned using a randomly sampled subset of the data, and confusion matrices are used to evaluate their accuracy.
