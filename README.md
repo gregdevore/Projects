@@ -82,7 +82,3 @@ This assignment explores imputing missing data in Python. Specifically, the prec
 **Lesson5_Clustering_DeVore.ipynb**
 
 This assignment begins with a handworked example illustrating how the k-means and hierarchical clustering algorithms are performed. In addition, the k-means algorithm was used to classify papers from a technical conference by topic. This also involved the generation of a term frequency, inverse document frequency (tf-idf) matrix so that distance measures could be computed between observations in the data set.
-
-**Lesson6_Association_Mining_DeVore.ipynb**
-
-This assignment looks at the topic of association mining and creating frequent itemsets and associated rules. In particular, the FP-Tree algorithm is used to create a series of frequent itemsets and rules by hand. In addition, the Apriori algorithm is used to explore the effect of different minimum support and confidence thresholds on the number of rules generated from a traffic accident data set.
