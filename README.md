@@ -82,3 +82,7 @@ This assignment explores imputing missing data in Python. Specifically, the prec
 **Lesson5_Clustering_DeVore.ipynb**
 
 This assignment begins with a handworked example illustrating how the k-means and hierarchical clustering algorithms are performed. In addition, the k-means algorithm was used to classify papers from a technical conference by topic. This also involved the generation of a term frequency, inverse document frequency (tf-idf) matrix so that distance measures could be computed between observations in the data set.
+
+**Lesson9_Recommendation_Systems_DeVore.ipynb**
+
+This assignment focuses on implementing a simple recommender system in Python. Specifically, memory and model based collaborative filters are used to predict ratings using the MovieLens data set. For the memory-based system, cosine similarity is used to create both user and item similarity matrices from a training data set, which are then used to predict ratings in a test data set of users and reviews. The model-based system used singular value decomposition to create a low rank approximation of the training data matrix, which was then used to predict reviews in the test data set. The root mean squared error (RMSE) of the test data set predictions was used to compare the methods.
