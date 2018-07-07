@@ -86,3 +86,9 @@ This assignment begins with a handworked example illustrating how the k-means an
 **Lesson9_Recommendation_Systems_DeVore.ipynb**
 
 This assignment focuses on implementing a simple recommender system in Python. Specifically, memory and model based collaborative filters are used to predict ratings using the MovieLens data set. For the memory-based system, cosine similarity is used to create both user and item similarity matrices from a training data set, which are then used to predict ratings in a test data set of users and reviews. The model-based system used singular value decomposition to create a low rank approximation of the training data matrix, which was then used to predict reviews in the test data set. The root mean squared error (RMSE) of the test data set predictions was used to compare the methods.
+
+### Selected Assignments From Deep Learning Course
+
+**Lesson1a_Perceptron_Learning_DeVore.ipynb**
+
+This assignment focuses on implementing a perceptron model with a step activation function from scratch. Although it is a simple model, proper understanding is essential to enable building of larger, more complex networks. The resulting model is used in a binary classification setting to classify species of flowers from the popular Iris data set. Particular attention was paid to the feedforward and weight updating portions of the process, to ensure understanding of how the network works 'under the hood'. The resulting decision boundary was plotted to visualize the separation between the classes. In addition, a classification task that was not linearly separable was attempted to show the limitations of the model.
