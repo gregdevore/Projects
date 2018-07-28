@@ -33,6 +33,10 @@ This was my first serious attempt at web scraping, a topic that I'd known about 
 
 This assignment explores some of the basic concepts associated with hypothesis testing using an autombile data set. Tests of normality are applied to the data of interest (price), and significance tests are conducted on the price when stratified by binary and multivariate categories such as fuel type, aspiration type, or style.
 
+**AutoPrices_Bootstrap_DeVore.pdf**
+
+This assignment explores some of the basic concepts associated with hypothesis testing using an autombile data set, this type using the bootstrap. The results are compared with classical parametric methods (t-test, ANOVA, Tukey's HSD), and discrepancies are discussed.
+
 **Bayesian_Auto_DeVore.pdf**
 
 This assignment continues the with the automobile price data set, this time using Bayesian analysis to perform hypothesis testing. Starting with a prior distribution of automobile price, likelihood functions are computed as Gaussian distributions with mean and standard deviation from price when stratified by binary or multivariate categories. Once posterior distributions are computed, they are compared using 0.95 credible intervals to determine if a significant relationship exists on the price when stratified by a particular category.
