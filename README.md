@@ -92,3 +92,7 @@ This assignment focuses on implementing a simple recommender system in Python. S
 **Lesson1a_Perceptron_Learning_DeVore.ipynb**
 
 This assignment focuses on implementing a perceptron model with a step activation function from scratch. Although it is a simple model, proper understanding is essential to enable building of larger, more complex networks. The resulting model is used in a binary classification setting to classify species of flowers from the popular Iris data set. Particular attention was paid to the feedforward and weight updating portions of the process, to ensure understanding of how the network works 'under the hood'. The resulting decision boundary was plotted to visualize the separation between the classes. In addition, a classification task that was not linearly separable was attempted to show the limitations of the model.
+
+**Lesson1b_Neural_Network_DeVore.ipynb**
+
+This assignment introduced the Keras library, in particular to solve the XOR problem. Since the data set is not linearly separable, this serves as an introduction to the concept of a hidden layer, and the power it brings to a classifier in terms of moving from linearly separable problems (no hidden layer), to nonlinearly separable problems (one or more hidden layers).
