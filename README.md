@@ -31,11 +31,11 @@ This was my first serious attempt at web scraping, a topic that I'd known about 
 
 **AutoPrices_DeVore.pdf**
 
-This assignment explores some of the basic concepts associated with hypothesis testing using an autombile data set. Tests of normality are applied to the data of interest (price), and significance tests are conducted on the price when stratified by binary and multivariate categories such as fuel type, aspiration type, or style.
+This assignment explores some of the basic concepts associated with hypothesis testing using an automobile data set. Tests of normality are applied to the data of interest (price), and significance tests are conducted on the price when stratified by binary and multivariate categories such as fuel type, aspiration type, or style.
 
 **AutoPrices_Bootstrap_DeVore.pdf**
 
-This assignment explores some of the basic concepts associated with hypothesis testing using an autombile data set, this type using the bootstrap. The results are compared with classical parametric methods (t-test, ANOVA, Tukey's HSD), and discrepancies are discussed.
+This assignment explores some of the basic concepts associated with hypothesis testing using an automobile data set, this type using the bootstrap. The results are compared with classical parametric methods (t-test, ANOVA, Tukey's HSD), and discrepancies are discussed.
 
 **Bayesian_Auto_DeVore.pdf**
 
@@ -99,4 +99,8 @@ This assignment focuses on implementing a perceptron model with a step activatio
 
 **Lesson1b_Neural_Network_DeVore.ipynb**
 
-This assignment introduced the Keras library, in particular to solve the XOR problem. Since the data set is not linearly separable, this serves as an introduction to the concept of a hidden layer, and the power it brings to a classifier in terms of moving from linearly separable problems (no hidden layer), to nonlinearly separable problems (one or more hidden layers).
+This assignment introduced the keras library, in particular to solve the XOR problem. Since the data set is not linearly separable, this serves as an introduction to the concept of a hidden layer, and the power it brings to a classifier in terms of moving from linearly separable problems (no hidden layer), to nonlinearly separable problems (one or more hidden layers).
+
+**Lesson2_DeVore_CustomNeuralNet.ipynb**
+
+This assignment implements a custom neural network library from scratch. Input and dense layers with an arbitrary number of nodes are supported, along with random weight initialization and identity and sigmoid activation functions. The supported loss function is mean squared error, and accuracy is computed to support binary classification problems. Feed forward and back propagation steps are implemented by hand. Models can be constructed with multiple dense layers to support various architectures.
