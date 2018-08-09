@@ -104,3 +104,7 @@ This assignment introduced the keras library, in particular to solve the XOR pro
 **Lesson2_DeVore_CustomNeuralNet.ipynb**
 
 This assignment implements a custom neural network library from scratch. Input and dense layers with an arbitrary number of nodes are supported, along with random weight initialization and identity and sigmoid activation functions. The supported loss function is mean squared error, and accuracy is computed to support binary classification problems. Feed forward and back propagation steps are implemented by hand. Models can be constructed with multiple dense layers to support various architectures.
+
+**RNN_Divisibility_DeVore.ipynb**
+
+This assignment using a recurrent neural network (RNN) to predict whether or not a number is divisible by three. The model encodes the number as a series of one-hot encoded sequences (one sequence per digit) and a single long short term memory (LSTM) layer to add the recurrent functionality. In addition, it is explored whether divisibility by other digits (such as 7 or 9) is possible using the same architecture, and theories as to why or why not are presented. Overall, the model is able to learn the 'rules' of divisibility by three with 100% accuracy, and numbers larger than those used in the training of the model are provided as a test.
