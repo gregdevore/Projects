@@ -107,4 +107,7 @@ This assignment implements a custom neural network library from scratch. Input a
 
 **RNN_Divisibility_DeVore.ipynb**
 
-This assignment using a recurrent neural network (RNN) to predict whether or not a number is divisible by three. The model encodes the number as a series of one-hot encoded sequences (one sequence per digit) and a single long-short term memory (LSTM) layer is added to enable the recurrent functionality. In addition, it is explored whether divisibility by other digits (such as 7 or 9) is possible using the same architecture, and theories as to why or why not are presented. Overall, the model is able to learn the 'rules' of divisibility by three with 100% accuracy, and numbers larger than those used in the training of the model are provided as a test.
+This assignment uses a recurrent neural network (RNN) to predict whether or not a number is divisible by three. The model encodes the number as a series of one-hot encoded sequences (one sequence per digit) and a single long-short term memory (LSTM) layer is added to enable the recurrent functionality. In addition, it is explored whether divisibility by other digits (such as 7 or 9) is possible using the same architecture, and theories as to why or why not are presented. Overall, the model is able to learn the 'rules' of divisibility by three with 100% accuracy, and numbers larger than those used in the training of the model are provided as a test.
+
+**Translate_SeqToSeqRNN_DeVore.ipynb**
+
