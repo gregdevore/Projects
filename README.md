@@ -111,3 +111,4 @@ This assignment uses a recurrent neural network (RNN) to predict whether or not 
 
 **Translate_SeqToSeqRNN_DeVore.ipynb**
 
+This assignment uses a sequence-to-sequence RNN to translate English sentences to French. Sentences are encoded using tokens corresponding to keys in a vocabulary dictionary, and fed to the network using a high dimensional embedding layer. A long-short term memory layer is used to enable the recurrent functionality, and softmax activation layers are used to predict the next word in the sequence. Overall, a 95% ‘perfect’ translation accuracy was obtained after training the network using 96,000 training sentences, and nearly 42,000 validation sentences.
