@@ -7,6 +7,10 @@ I'm an engineer with a master's degree in applied mathematics and certificates i
 
 ## Projects in this Repository
 
+**MusicGenreLDA_DeVore.pdf**
+
+This was the assignment from graduate school that introduced me to the world of machine learning. The objective of the assignment was to use several powerful mathematical techniques from the fields of signal processing (time-frequency analysis), linear algrbra (Singular Value Decomposition) and statistics (Linear Discrimination Analysis) to build an algorithm capable of accurately identifying specific genres of music.
+
 **MontyHall_Simulation.pdf**
 
 This project was a part of the second quarter of my data science certificate program. It simulates the famous "Monty Hall" problem, originally featured on the television game show program "Let's Make a Deal". In the game, a contestant is told that a prize exists behind one of three doors, and behind the other two doors are goats. The contestant picks a door, and one of the other two doors is then opened by the host revealing one of the goats. At this point, the contestant is allowed to switch their choice to the remaining door, or stick with their original choice. The optimal strategy is somewhat counterintuitive without evidence, so the writeup performs a simulation to determine the probability of winning the prize for each strategy (switching vs. staying) and summarizes the results.
