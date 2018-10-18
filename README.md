@@ -9,7 +9,7 @@ I'm an engineer with a master's degree in applied mathematics and certificates i
 
 **MusicGenreLDA_DeVore.pdf**
 
-This was the assignment from graduate school that introduced me to the world of machine learning. The objective of the assignment was to use several powerful mathematical techniques from the fields of signal processing (time-frequency analysis), linear algrbra (Singular Value Decomposition) and statistics (Linear Discriminant Analysis) to build an algorithm capable of accurately identifying specific genres of music.
+This was the assignment from graduate school that introduced me to the world of machine learning. The objective of the assignment was to use several powerful mathematical techniques from the fields of signal processing (time-frequency analysis), linear algrbra (singular value decomposition) and statistics (linear discriminant analysis) to build an algorithm capable of accurately identifying specific genres of music.
 
 **MontyHall_Simulation.pdf**
 
