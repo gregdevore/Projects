@@ -3,7 +3,7 @@ A collection of personal data visualization, data science, and machine learning 
 
 ## About Me
 
-I'm an engineer with a master's degree in applied mathematics and certificates in data science and machine learning (this one's still in progress). I wanted to have a place to share some of the projects I've created while learning and exploring topics in these fields.
+I'm an engineer with a master's degree in applied mathematics and certificates in data science and machine learning. I wanted to have a place to share some of the projects I've created while learning and exploring topics in these fields.
 
 ## Projects in this Repository
 
