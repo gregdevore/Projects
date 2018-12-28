@@ -35,6 +35,9 @@ This was my first serious attempt at web scraping, a topic that I'd known about 
 
 This project uses SQL to query a Google Public BigQuery data set with information from 1.2 million accidents and analyze the results. New features are created to study temporal effects, common causes, and how the number of accidents and injuries within each borough have changed over time.
 
+**Toxic_Comments_DeVore.ipynb**
+Determine whether an online comment is toxic. Includes comparison between shallow and deep learning methods for binary classification formulation, and deep learning methods for multilabel, multiclass formulation. Both shallow and deep learning approaches achieved 85% recall on validation data.
+
 ### Selected Assignments From Data Science Certificate Program
 
 **AutoPrices_DeVore.pdf**
