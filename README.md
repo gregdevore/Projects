@@ -37,7 +37,7 @@ This project uses SQL to query a Google Public BigQuery data set with informatio
 
 **Toxic_Comments_DeVore.ipynb**
 
-Determine whether an online comment is toxic. Includes comparison between shallow and deep learning methods for binary classification formulation, and deep learning methods for multilabel, multiclass formulation. Both shallow and deep learning approaches achieved 85% recall on validation data.
+Determine whether an online comment is toxic. Includes comparison between shallow and deep learning methods for binary classification formulation, and exploration of deep learning methods for multilabel, multiclass formulation. Both shallow and deep learning approaches achieved 85% recall on validation data.
 
 ### Selected Assignments From Data Science Certificate Program
 
